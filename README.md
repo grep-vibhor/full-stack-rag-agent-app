@@ -11,6 +11,7 @@ A full-stack application that implements a Retrieval-Augmented Generation (RAG) 
 * LangChain.js
 * ChromaDB
 * OpenAI API
+* Docker
 
 ### Frontend
 
@@ -41,9 +42,9 @@ export OPENAI_API_KEY=sk-proj.....
 3. Run Vector Store Database
 
 ```bash
-	docker pull chromadb/chroma
-	docker run -p 8000:8000 chromadb/chroma  
-	curl http://localhost:8000/api/v1/heartbeat
+docker pull chromadb/chroma
+docker run -p 8000:8000 chromadb/chroma  
+curl http://localhost:8000/api/v1/heartbeat
 ```
 
 4. Have a quick look at input data files
